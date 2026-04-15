@@ -10,7 +10,6 @@ export async function findAll(filters = {}) {
   return prisma.task.findMany({ where });
 }
 
-// Create a new task
 export async function create(data) {
   return prisma.task.create({
     data,
